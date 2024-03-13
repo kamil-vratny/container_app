@@ -10,7 +10,8 @@ ITEMS = {
     "6": "DVD",
     "7": "CDROM",
     "8": "USB",
-    "9": "HDMI"
+    "9": "HDMI",
+    "10": "VDI"
 }
 
 app = FastAPI()
