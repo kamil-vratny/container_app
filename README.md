@@ -1,5 +1,3 @@
 # container_app
-Testing container app
-* CodeBuild
-* ECR
-* CodeDeploy
+
+aws ecs update-service --service my-service --cluster my-cluster --deployment-configuration "deploymentCircuitBreaker={enable=true,rollback=true}" --deployment-controller type=CODE_DEPLOY
