@@ -1,4 +1,5 @@
-FROM amazonlinux:2023
+#FROM amazonlinux:2023
+FROM public.ecr.aws/amazonlinux/amazonlinux:latest
 EXPOSE 80
 ARG FUNCTION_DIR="/opt/backend/"
 RUN yum -y update && yum -y install python3-pip
