@@ -1,9 +1,8 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:879891711462:task-definition/demoapp-cf-stack-DemoAppECSTask-k3qBjPLwNkYL:1",
     "containerDefinitions": [
         {
             "name": "demoapp-backend-ecs-container",
-            "image": "879891711462.dkr.ecr.eu-central-1.amazonaws.com/demoapp-backend-repo:latest",
+            "image": "<IMAGE_URI>",
             "cpu": 512,
             "memory": 512,
             "links": [],
