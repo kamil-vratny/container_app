@@ -6,6 +6,7 @@
 * buildspec.yml - CodeBuild spec file
 * taskdef.json - task definition
 * appspec.yaml - service definition
+* imageDetail.json - image url (built)
 
 
 ## Github Connection
