@@ -11,8 +11,7 @@ ITEMS = {
     "7": "CDROM",
     "8": "USB",
     "9": "HDMI",
-    "10": "VDI",
-    "11": "PCI"
+    "10": "VDI"
 }
 
 app = FastAPI()
