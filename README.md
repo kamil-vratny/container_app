@@ -13,4 +13,4 @@ use V2
 * trigger - no filter
 * build provider - AWS CodeBuild
 * deployment - AWS CodeDeploy
-    * ECS Service - Blue/Green (AWS CodeDeploy) !
+    * ECS Service - Blue/Green (AWS CodeDeploy)
