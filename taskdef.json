@@ -2,7 +2,7 @@
     "containerDefinitions": [
         {
             "name": "demoapp-backend-ecs-container",
-            "image": "<IMAGE_URI>",
+            "image": "<IMAGE>",
             "cpu": 512,
             "memory": 512,
             "links": [],
