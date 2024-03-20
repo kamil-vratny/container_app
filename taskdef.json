@@ -1,24 +1,112 @@
 {
-    "executionRoleArn": "",
+    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:879891711462:task-definition/demoapp-cf-stack-DemoAppECSTask-k3qBjPLwNkYL:1",
     "containerDefinitions": [
         {
-            "name": "sample-website",
-            "image": "nginx",
-            "essential": true,
+            "name": "demoapp-backend-ecs-container",
+            "image": "879891711462.dkr.ecr.eu-central-1.amazonaws.com/demoapp-backend-repo:latest",
+            "cpu": 512,
+            "memory": 512,
+            "links": [],
             "portMappings": [
                 {
+                    "containerPort": 80,
                     "hostPort": 80,
-                    "protocol": "tcp",
-                    "containerPort": 80
+                    "protocol": "tcp"
                 }
-            ]
+            ],
+            "essential": true,
+            "entryPoint": [],
+            "command": [],
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "secrets": [],
+            "dnsServers": [],
+            "dnsSearchDomains": [],
+            "extraHosts": [],
+            "dockerSecurityOptions": [],
+            "dockerLabels": {},
+            "ulimits": [],
+            "systemControls": [],
+            "credentialSpecs": []
         }
+    ],
+    "family": "demoapp-cf-stack-DemoAppECSTask-k3qBjPLwNkYL",
+    "executionRoleArn": "arn:aws:iam::879891711462:role/demoapp-cf-stack-DemoAppECSTaskRole-A39N291EkNCA",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
     ],
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "networkMode": "awsvpc",
-    "cpu": "256",
-    "memory": "512",
-    "family": "ecs-demo"
+    "cpu": "1024",
+    "memory": "2048",
+    "registeredAt": "2024-02-14T07:19:23.783Z",
+    "registeredBy": "arn:aws:sts::879891711462:assumed-role/AWSReservedSSO_AdministratorAccess_4a08a69bbf6b1854/kamil.vratny@orbit.cz",
+    "tags": [
+        {
+            "key": "application-name",
+            "value": "Demo App"
+        },
+        {
+            "key": "product-owner",
+            "value": "kamil.vratny@i16.cz"
+        },
+        {
+            "key": "product-project",
+            "value": "Demo App"
+        },
+        {
+            "key": "environment",
+            "value": "Dev"
+        },
+        {
+            "key": "confidentiality",
+            "value": "2 - General"
+        },
+        {
+            "key": "team",
+            "value": "FX Analytics"
+        },
+        {
+            "key": "shared-service",
+            "value": "FALSE"
+        },
+        {
+            "key": "application-id",
+            "value": "0"
+        },
+        {
+            "key": "entity",
+            "value": "RBCZ"
+        },
+        {
+            "key": "cost-center",
+            "value": "001"
+        }
+    ]
 }
