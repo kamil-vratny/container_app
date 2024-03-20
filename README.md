@@ -4,6 +4,9 @@
 * Dockerfile - docker image definition
 * backend_main.py - FastAPI based application
 * buildspec.yml - CodeBuild spec file
+* taskdef.json - task definition
+* appspec.yaml - service definition
+
 
 ## Github Connection
 use V2
